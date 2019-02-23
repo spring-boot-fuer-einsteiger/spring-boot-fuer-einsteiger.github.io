@@ -1,0 +1,18 @@
+<p>
+{% for item in site.data.navigation %}
+
+	{% if page.permalink == item.link %}
+	
+		{% if item.previous-link %}
+			<a href="{{ item.previous-link }}" style="float: left;">&lt;&nbsp;{{ item.previous-name }}</a> 
+		{% endif %}
+		
+		
+		{% if item.next-link %}
+				<a href="{{ item.next-link }}" style="float: right;">{{ item.next-name }} ></a> 
+		    
+		{% endif %}
+
+	{% endif %}
+{% endfor %}
+</p>

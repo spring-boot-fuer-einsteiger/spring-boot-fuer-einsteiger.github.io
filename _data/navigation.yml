@@ -1,0 +1,24 @@
+- name: Spring Boot für Einsteiger
+  link: spring-boot-fuer-einsteiger
+  next-link: spring-tool-suite
+  next-name: Spring Tool Suite
+
+- name: Spring Tool Suite
+  link: spring-tool-suite
+  next-link: spring-starter
+  next-name: Spring Starter
+  previous-link: spring-boot-fuer-einsteiger
+  previous-name: Spring Boot für Einsteiger
+  
+- name: Spring Starter
+  link: spring-starter
+  next-link: spring-developer-tools
+  next-name: Spring Developer Tools
+  previous-link: spring-tool-suite
+  previous-name: Spring Tool Suite
+
+- name: Spring Developer Tools
+  link: spring-developer-tools
+  previous-link: spring-starter
+  previous-name: Spring Starter
+  

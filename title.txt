@@ -1,0 +1,11 @@
+---
+title: Spring  Boot für Einsteiger
+author: Dirk Koller
+year: 2017
+rights:  Lizenz
+lang: de-DE
+subtitle: Untertitel
+toc-title: Inhaltsverzeichnis
+documentclass: book
+geometry: paperwidth=6in, paperheight=9in, margin=1in
+...
