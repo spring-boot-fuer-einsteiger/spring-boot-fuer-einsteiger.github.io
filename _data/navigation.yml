@@ -1,5 +1,5 @@
 - name: Spring Boot für Einsteiger
-  link: spring-boot-fuer-einsteiger
+  link: /
   next-link: spring-tool-suite
   next-name: Spring Tool Suite
 
@@ -7,7 +7,7 @@
   link: spring-tool-suite
   next-link: spring-starter
   next-name: Spring Starter
-  previous-link: spring-boot-fuer-einsteiger
+  previous-link: /
   previous-name: Spring Boot für Einsteiger
   
 - name: Spring Starter

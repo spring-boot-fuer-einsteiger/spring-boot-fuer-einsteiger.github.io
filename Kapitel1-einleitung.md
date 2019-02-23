@@ -1,7 +1,7 @@
 ---
 title: Spring Boot für Einsteiger
 description: Java-Entwicklung mit dem Spring-Framework
-permalink: spring-boot-fuer-einsteiger
+permalink: /
 vgwort:
 ---
 
