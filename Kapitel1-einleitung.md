@@ -16,6 +16,6 @@ Das hat sich mit der Einführung von *Spring Boot* im Jahr 2013 grundlegend geä
 
 Dieses Buch, das Online kostenlos zur Verfügung steht, soll den Einsteiger in Spring Boot begleiten. Es wird nicht jedes Detail von Spring besprochen, dazu ist das Framework zu mächtig. Ein solches Buch wäre auch gar nicht lesbar. Hier geht es darum, die Grundlagen soweit zu verstehen, dass man sich danach fehlende Teile im Internet erschließen kann.
 
-## Was muss ich wissen?
+## Voraussetzungen
 
 Das Buch richtet sich an erfahrene Entwickler, die mit der Spring Boot-Entwicklung beginnen möchten oder schon begonnen haben. Erfahrene Entwickler meint hier solche, die mit den Konzepten und der Syntax einer objektorientierten, C-ähnlichen Programmiersprache wie C++, C# oder optimalerweise Java vertraut sind. Anfänger in der Kunst der Programmierung sind willkommen, benötigen aber auf jeden Fall weiteres Material. Das ist bei Java zum Glück kein Problem. Zu kaum einer anderen Programmiersprache existieren derart viele Bücher, Sie werden bei Bedarf sicher fündig werden. Meine Empfehlungen für den Einstieg in die Java-Programmierung sind *Head First Java* von Kathy Sierra und Bert Bates, *Thinking in Java* von Bruce Eckel und schließlich *Effective Java* von Joshua Bloch. 
