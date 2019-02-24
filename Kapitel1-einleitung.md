@@ -6,13 +6,13 @@ vgwort:
 ---
 
 ## Spring 
-Wer sich mit Java im Backend beschäftigt kommt um Spring kaum herum. Das von Rod Johnson ins Leben gerufene Framework hat der Java-Enterprise-Bewegung neues Leben eingehaucht. Zurück zu Geschwindigkeit, Eleganz und Wartbarkeit. Und vor allen Dingen zurück zu Spaß am Programmieren. Spring hat Java im Backend revolutioniert. Das war im Jahr 2004.
+Wer sich mit Java im Backend beschäftigt kommt um *Spring* kaum herum. Das von Rod Johnson ins Leben gerufene Framework hat der Java-Enterprise-Bewegung neues Leben eingehaucht. Zurück zu Geschwindigkeit, Eleganz und Wartbarkeit. Und vor allen Dingen zurück zu Spaß am Programmieren. Spring hat Java im Backend revolutioniert. Das war im Jahr 2004.
 
 Über die Jahre ist Spring immer weiter gewachsen und besteht inzwischen aus zig Modulen. Ein gewaltiger Umfang, der den Anfänger erschlägt und die Einarbeitung in das Framework erschwert. Muss man alle Module kennen? Wenn nein, welche muss man auf jeden Fall kennen? Wo sollte man beginnen? Was muss wo konfiguriert werden? Auch wenn Spring die Java-Entwicklung grundsätzlich vereinfacht, war die Lernkurve zur Einarbeitung in das Framework doch nicht ohne.
 
 ## Spring Boot
 
-Das hat sich mit der Einführung von Spring Boot im Jahr 2013 grundlegend geändert. Verglichen mit ersten Spring-Projekten mit aufwendiger XML-Konfiguration, undurchschaubaren Abhängigkeiten und langsamen Applikationsservern wirkt Spring Boot wie pure Magie. Durch Anwendung des Convention over configuration-Paradigmas, embedded Tomcat, Starter-Dependencies und tollen Tools hat Spring das Kunststück zum zweiten Mal geschafft. Spring Boot verhilft der Java-Entwicklung zu neuem Glanz und begeistert die Entwicklergemeinde.
+Das hat sich mit der Einführung von *Spring Boot* im Jahr 2013 grundlegend geändert. Verglichen mit ersten Spring-Projekten mit aufwendiger XML-Konfiguration, undurchschaubaren Abhängigkeiten und langsamen Applikationsservern wirkt Spring Boot wie pure Magie. Durch Anwendung des Convention over configuration-Paradigmas, embedded Tomcat, Starter-Dependencies und tollen Tools hat Spring das Kunststück zum zweiten Mal geschafft. Spring Boot verhilft der Java-Entwicklung zu neuem Glanz und begeistert die Entwicklergemeinde.
 
 Dieses Buch, das Online kostenlos zur Verfügung steht, soll den Einsteiger in Spring Boot begleiten. Es wird nicht jedes Detail von Spring besprochen, dazu ist das Framework zu mächtig. Ein solches Buch wäre auch gar nicht lesbar. Hier geht es darum, die Grundlagen soweit zu verstehen, dass man sich danach fehlende Teile im Internet erschließen kann.
 
