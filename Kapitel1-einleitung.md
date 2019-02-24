@@ -6,7 +6,7 @@ vgwort:
 ---
 
 ## Spring 
-Wer sich mit Java im Backend beschäftigt kommt um *Spring* kaum herum. Das von Rod Johnson ins Leben gerufene Framework hat der Java-Enterprise-Bewegung neues Leben eingehaucht. Zurück zu Geschwindigkeit, Eleganz und Wartbarkeit. Und vor allen Dingen zurück zu Spaß am Programmieren. Spring hat Java im Backend revolutioniert. Das war im Jahr 2004.
+Wer sich mit Java im Backend beschäftigt kommt um *Spring* kaum herum. Das von Rod Johnson ins Leben gerufene Framework hat der Java-Enterprise-Entwicklung neues Leben eingehaucht. Zurück zu Geschwindigkeit, Eleganz und Wartbarkeit. Und vor allen Dingen zurück zum Spaß am Programmieren. Spring hat Java im Backend revolutioniert. Das war im Jahr 2004.
 
 Über die Jahre ist Spring immer weiter gewachsen und besteht inzwischen aus zig Modulen. Ein gewaltiger Umfang, der den Anfänger erschlägt und die Einarbeitung in das Framework erschwert. Muss man alle Module kennen? Wenn nein, welche muss man auf jeden Fall kennen? Wo sollte man beginnen? Was muss wo konfiguriert werden? Auch wenn Spring die Java-Entwicklung grundsätzlich vereinfacht, war die Lernkurve zur Einarbeitung in das Framework doch nicht ohne.
 
