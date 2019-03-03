@@ -12,11 +12,18 @@
   
 - name: Spring Starter
   link: spring-starter
-  next-link: spring-developer-tools
-  next-name: Spring Developer Tools
+  next-link: hello-spring
+  next-name: Hello Spring
   previous-link: spring-tool-suite
   previous-name: Spring Tool Suite
 
+- name: Hello Spring
+  link: hello-spring
+  next-link: spring-developer-tools
+  next-name: Spring Developer Tools
+  previous-link: spring-starter
+  previous-name: Spring Starter
+    
 - name: Spring Developer Tools
   link: spring-developer-tools
   previous-link: spring-starter
