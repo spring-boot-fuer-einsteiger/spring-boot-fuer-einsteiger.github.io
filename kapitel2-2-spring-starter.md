@@ -3,6 +3,7 @@ title: Spring Starter
 description: Generieren von Sprint Boot-Projekten
 permalink: spring-starter
 vgwort:
+lang: de
 ---
 
 

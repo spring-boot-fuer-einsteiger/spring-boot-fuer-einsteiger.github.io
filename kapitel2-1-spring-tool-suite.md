@@ -3,6 +3,7 @@ title: Spring Tool Suite
 description: Spring-Entwicklung mit Eclipse
 permalink: spring-tool-suite
 vgwort:
+lang: de
 ---
 
 In diesem Buch wird die *Spring Tool Suite*, kurz *STS* als Entwicklungsumgebung genutzt. Man kann STS kostenlos auf den Webseiten von Pivotal[^1] für die gängigen Betriebssysteme herunterladen. Die beliebteste Variante von STS, *Spring Tools for Eclipse*, basiert auf *Eclipse* und dürfte damit den meisten Java-Entwicklern bekannt vorkommen. Sie wird hier verwendet. Daneben gibt es STS noch als Erweiterung für Visual Studio und Atom. Die Spring Tool Suite unterstützt den Entwickler mit hilfreichen Views und Assistenten. Die wichtigsten Helfer werden im Folgenden vorgestellt.

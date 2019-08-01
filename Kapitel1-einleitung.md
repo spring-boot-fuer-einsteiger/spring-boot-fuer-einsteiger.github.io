@@ -3,6 +3,7 @@ title: Spring Boot für Einsteiger
 description: Java-Entwicklung mit dem Spring-Framework
 permalink: /
 vgwort:
+lang: de
 ---
 
 ## Spring 
