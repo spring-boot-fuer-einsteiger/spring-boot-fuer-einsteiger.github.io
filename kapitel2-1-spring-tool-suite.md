@@ -11,14 +11,18 @@ In diesem Buch wird die *Spring Tool Suite*, kurz *STS* als Entwicklungsumgebung
 
 ## Boot Dashboard
 
-Das Boot Dashboard ist eine View mit der sich Spring Boot Prozesse einfach starten oder beenden lassen. Der Zustand (gestartet oder nicht) wird über einen grünen Pfeil visualisiert. Grade wenn man sehr viele Projekte im Workspace hat (was bei Microservice-Projekten ja durchaus mal vorkommt) ist die View eine großartige Hilfe, um den Überblick zu behalten. Mit dem Weltkugel-Icon lässt sich ein Browser mit der Default-URL des Services öffnen. Die View hat noch mehr Funktionen, die aber hier erst mal nicht interessieren.
+Das Boot Dashboard, erreichbar über `Window > Show View > Other`, ist eine View mit der sich Spring Boot Prozesse einfach starten oder beenden lassen. Der Zustand (gestartet oder nicht) wird über einen grünen Pfeil visualisiert. Grade wenn man sehr viele Projekte im Workspace hat (was bei Microservice-Projekten ja durchaus mal vorkommt) ist die View eine großartige Hilfe, um den Überblick zu behalten. Hinter dem Namen des Projekts findet sich noch die Angabe, ob das Projekt die *devtools* aktiviert hat (dazu später mehr), sowie der Port, unter dem das Projekt erreichbar ist.
+
+Mit Hilfe der Buttonleiste am oberen Rand lassen sich ausgewählte Projekte starten, debuggen oder beenden. Ein Klick auf das Weltkugel-Icon öffnet einen Browser mit der Default-URL des Services. 
+
+Die View hat noch mehr Funktionen, die aber hier erst mal nicht interessieren.
 
 ![Boot Dashboard](./images/spring-boot-dashboard.jpg)
 
 
 ## Spring Initializr
 
-Der schnellste Weg, um zu einem Spring Boot-Projekt zu kommen, ist es generieren zu lassen. Spring bietet im Netz [^2] dafür ein Werkzeug namens *Spring Initializr* (oder auch *Spring Starter*) an. Der Initializr hat eine REST-API, sodass er in andere Anwendungen integriert werden kann. In STS findet man das Werkzeug unter `File > New > Spring Starter` Project. Wer mit Spring Boot beginnt, sollte auf jeden Fall diesen Assistenten benutzen, um Spring-Projekte anzulegen.
+Der schnellste Weg, um zu einem Spring Boot-Projekt zu gelangen, ist es generieren zu lassen. Spring bietet im Netz [^2] dafür ein Werkzeug namens *Spring Initializr* (oder auch *Spring Starter*) an. Der Initializr hat eine REST-API, sodass er in andere Anwendungen integriert werden kann. In STS findet man das Werkzeug unter `File > New > Spring Starter` Project. Wer mit Spring Boot beginnt, sollte auf jeden Fall diesen Assistenten benutzen, um Spring-Projekte anzulegen.
 
 ## Diverse Helferlein
 
