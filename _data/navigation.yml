@@ -28,4 +28,11 @@
   link: spring-developer-tools
   previous-link: spring-starter
   previous-name: Spring Starter
+  next-link: spring-view-thymeleaf
+  next-name: Spring Views mit Thymeleaf
+  
+- name: Spring Views mit Thymeleaf
+  link: spring-view-thymeleaf
+  previous-link: spring-developer-tools
+  previous-name: Spring Developer Tools
   
