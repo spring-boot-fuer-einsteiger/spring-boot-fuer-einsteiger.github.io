@@ -1,3 +1,7 @@
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://www.spring-boot-fuer-einsteiger.de" # the base hostname & protocol for your site, e.g. http://example.com
+
+
 defaults:
   -
     scope:
