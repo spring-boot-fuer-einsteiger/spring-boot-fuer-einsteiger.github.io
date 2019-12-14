@@ -6,6 +6,8 @@ vgwort:
 lang: de
 ---
 
+# Spring Views mit Thymeleaf
+
 Im letzten Abschnitt wurde gezeigt, wie unserer Anwendung mit einen RestController eine erste Ausgabe entlockt werden kann. Auf ähnliche Weise könnte man durch Rückgabe von JSON-Daten auf der Clientseite gerenderte Webseiten bauen (zum Beispiel Single-Page-Webanwendungen mit AngularJS).  
 
 Das ist auf jeden Fall ein spannendes Thema, das später noch eingehend behandelt wird. Hier soll jetzt aber zunächst eher der der klassische Weg serverseitig generierter Webseiten verfolgt werden. Während man früher mit Java Server Pages (JSP) gearbeitet hat, ist heute *Thymeleaf* meist die View-Technologie der Wahl. Wie bei JSPs finden sich spezielle Thymeleaf-Attribute im Code, dieser ist allerdings weiterhin gültiges html. Das hat den Vorteil, dass WYSIWYG-Editoren die Seite anzeigen und somit Designer den html-Code leicht anpassen können. 

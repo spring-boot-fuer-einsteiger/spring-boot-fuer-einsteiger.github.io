@@ -1,8 +1,7 @@
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" 
-		{% if page.permalink == item.link %}style="color: red;"{% endif %} 
-		{% if page.permalink != item.link %}style="color: grey;"{% endif %} >
-      {{ item.name }}
-    </a>
-	<br/>
-  {% endfor %}
+	  {% for item in site.data.navigation %}
+      <li>
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="nav-link active"{% endif %} {% if page.url != item.link %}class="nav-link"{% endif %}>{{ item.name }}</a>
+      </li>
+	  {% endfor %}
+
+

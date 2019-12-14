@@ -6,7 +6,7 @@ vgwort:
 lang: de
 ---
 
-
+# Spring Starter
 
 Spring Boot-Projekte lassen sich in der *Spring Tool Suite* bequem mit dem Spring Starter erstellen. Man findet den Assistenten unter `File > New > Spring Starter Project`.
 
