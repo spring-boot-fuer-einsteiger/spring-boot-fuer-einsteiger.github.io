@@ -5,6 +5,7 @@ permalink: /
 vgwort:
 lang: de
 ---
+# Spring Boot für Einsteiger
 
 ## Spring 
 Wer sich mit Java im Backend beschäftigt kommt um *Spring* kaum herum. Das von Rod Johnson ins Leben gerufene Framework hat der in eine Sackgasse geratenen Java-Enterprise-Entwicklung neues Leben eingehaucht. Zurück zu Geschwindigkeit, Eleganz und Wartbarkeit. Und vor allen Dingen zurück zum Spaß am Programmieren. Spring hat Java im Backend revolutioniert. Das war im Jahr 2004.
