@@ -1,0 +1,52 @@
+I"�<h1 id="spring-views-mit-thymeleaf">Spring Views mit Thymeleaf</h1>
+
+<p>Im letzten Abschnitt wurde gezeigt, wie unserer Anwendung mit einen RestController eine erste Ausgabe entlockt werden kann. Auf ähnliche Weise könnte man durch Rückgabe von JSON-Daten auf der Clientseite gerenderte Webseiten bauen (zum Beispiel Single-Page-Webanwendungen mit AngularJS).</p>
+
+<p>Das ist auf jeden Fall ein spannendes Thema, das später noch eingehend behandelt wird. Hier soll jetzt aber zunächst eher der der klassische Weg serverseitig generierter Webseiten verfolgt werden. Während man früher mit Java Server Pages (JSP) gearbeitet hat, ist heute <em>Thymeleaf</em> meist die View-Technologie der Wahl. Wie bei JSPs finden sich spezielle Thymeleaf-Attribute im Code, dieser ist allerdings weiterhin gültiges html. Das hat den Vorteil, dass WYSIWYG-Editoren die Seite anzeigen und somit Designer den html-Code leicht anpassen können.</p>
+
+<p>Um Thymeleaf nutzen zu können wird, der zugehörige Starter zugefügt. Im Kontextmenü des Pom öffnet <code class="highlighter-rouge">Spring &gt; Edit Starters</code> wieder den bekannten Assistenten. Hier wird nun Thymeleaf zugefügt:</p>
+
+<p><img src="./images/edit-spring-boot-starter.jpg" alt="Spring Boot Starter editieren" /></p>
+
+<p>Im Pom findet sich danach der Thymeleaf-Eintrag in den Dependencies:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+	<span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+	<span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-thymeleaf<span class="nt">&lt;/artifactId&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre></div></div>
+
+<p>Da der Assistent nur diesen Eintrag ergänzt kann man das übrigens auch von Hand erledigen.
+Das Zufügen des Starter in die Dependencies ruft wieder die Autoconficuration auf den Plan. Sie konfiguriert einen ViewResolver für Thymeleaf. Der wiederum geht im Standardfall davon aus, dass sich Thymeleaf-Templates unter src/main/ressources/templates befinden. Hier legen wir nun home.html mit folgendem Inhalt an:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns:th=</span><span class="s">"http://www.thymeleaf.org"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Home<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=UTF-8"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">th:text=</span><span class="s">"'Hello World from Template'"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>Neben der Namespace-Deklaration weist nur die Zeile mit der Ausgabe (th:text) auf Thymeleaf hin.</p>
+
+<p>Damit das Template gefunden wird, sind kleine Änderungen am Controller nötig. Es wird kein RestController benötigt, sondern ein einfacher (Web-) Controller, der durch Anpassen der Annotation in der bestehenden Controller-Klasse erzeugt wird:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Controller</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CRMController</span> <span class="o">{</span>
+	
+  <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"/"</span><span class="o">)</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="nf">home</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="s">"home"</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Ebenfalls geändert wurde der Rückgabewert, der nun <em>home</em> lautet. Durch diese Änderungen wird nun im src/main/resources/templates-Verzeichnis der Anwendung nach einem Thymeleaf-Template namens home.html gesucht. Die Endung <em>html</em> hängt der ViewResolver selber an.</p>
+
+<p>Ein Aufruf von http://localhost:8080 im Browser (oder ein Klick auf die Weltkugel im Boot-Dasboard) zeigt nun wie gewünscht die Ausgabe “Hello World from Template” an.</p>
+
+:ET

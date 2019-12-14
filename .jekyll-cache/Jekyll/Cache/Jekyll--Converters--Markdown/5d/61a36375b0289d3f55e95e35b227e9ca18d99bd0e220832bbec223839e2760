@@ -1,0 +1,73 @@
+I"<h1 id="spring-starter">Spring Starter</h1>
+
+<p>Spring Boot-Projekte lassen sich in der <em>Spring Tool Suite</em> bequem mit dem Spring Starter erstellen. Man findet den Assistenten unter <code class="highlighter-rouge">File &gt; New &gt; Spring Starter Project</code>.</p>
+
+<p><img src="./images/file-new-spring-starter-project.jpg" alt="Neues Projekt anlegen" /></p>
+
+<h2 id="der-spring-starter-assitent">Der Spring Starter-Assitent</h2>
+
+<p>Der Assistent fragt einige Daten ab. Unter anderem den Namen des Projekts, den Speicherort, den Projekttyp (Maven oder Gradle) und die Maven-Koordinaten (Group, Artifact, Version usw). Um dem Buch optimal folgen zu können, empfiehlt es sich die Eingaben aus dem folgendem Screenshot zu machen:</p>
+
+<p><img src="./images/new-spring-starter-project.jpg" alt="Neues Projekt anlegen mit Spring Starter" /></p>
+
+<p>Auf der nächsten Seite des Assistenten werden dem Projekt benötigte Dependencies zugefügt. Hier ist das vorerst nur <em>Web</em>, weitere Abhängigkeiten folgen später.</p>
+
+<p><img src="./images/new-spring-starter-project-dependencies.jpg" alt="Abhängigkeiten festlegen" /></p>
+
+<p>Der Assistent wird mit <em>Finish</em> abgeschlossen und kurze Zeit später findet man das generierte Projekt im STS <em>Package- oder Project Explorer</em> .</p>
+
+<h2 id="das-erzeugte-projekt">Das erzeugte Projekt</h2>
+
+<p>Die Projektstruktur entspricht bei obigen Eingaben der eines Maven-Projekts und sollte Java-Entwicklern vertraut sein. Interessant ist vor allen Dingen die Klasse <code class="highlighter-rouge">CRMApplication</code>. Die Klasse enthält die main-Methode zum Start der Sprint Boot-Anwendung, die mit der Klassenmethode <code class="highlighter-rouge">SpringApplication.run</code> initiiert wird. Die Annotation <code class="highlighter-rouge">@SpringBootApplication</code> ist eine Sammel-Annotation, die <code class="highlighter-rouge">@Configuration</code>, <code class="highlighter-rouge">@EnableAutoConfiguration</code> und <code class="highlighter-rouge">@ComponentScan</code> bündelt. Was diese Annotationen bedeuten wird im weiteren Verlauf noch ausführlich besprochen, hier genügt es Notiz davon zu nehmen.</p>
+
+<p>Ebenfalls lohnenswert ist ein Blick in die erzeugte POM-Datei. Spring-relevant ist hier der Parent <em>spring-boot-starter-parent</em> mit der aktuellen Spring Boot-Version, über den das POM zahlreiche Einstellungen erbt.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;parent&gt;</span>
+	<span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+	<span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-parent<span class="nt">&lt;/artifactId&gt;</span>
+	<span class="nt">&lt;version&gt;</span>2.1.2.RELEASE<span class="nt">&lt;/version&gt;</span>
+	<span class="nt">&lt;relativePath/&gt;</span> <span class="c">&lt;!-- lookup parent from repository --&gt;</span>
+<span class="nt">&lt;/parent&gt;</span>
+</code></pre></div></div>
+
+<p>In den Dependencies finden sich die spring-boot-starter-Abhängigkeiten <em>web</em>, die im Assistenten zugefügt wurde. Außerdem <em>spring-boot-starter-test</em>, da Spring Boot davon ausgeht, dass Tests auf jeden Fall benötigt werden. Die spring-boot-starter-Abhängigkeiten enthalten selber keinen Code. Vielmehr bündeln sie mehrere Bibliotheken in zueinander passenden Versionen zu einem Thema.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependencies&gt;</span>
+	<span class="nt">&lt;dependency&gt;</span>
+		<span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+		<span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-web<span class="nt">&lt;/artifactId&gt;</span>
+	<span class="nt">&lt;/dependency&gt;</span>
+	<span class="nt">&lt;dependency&gt;</span>
+		<span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+		<span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-test<span class="nt">&lt;/artifactId&gt;</span>
+		<span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+	<span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span>
+</code></pre></div></div>
+
+<p>Schließlich folgt noch das <em>spring-boot-maven-plugin</em>, mit dessen Hilfe ein ausführbares Jar aus dem Projekt erzeugt werden kann.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;plugin&gt;</span>
+	<span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+	<span class="nt">&lt;artifactId&gt;</span>spring-boot-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+<span class="nt">&lt;/plugin&gt;</span>
+</code></pre></div></div>
+
+<p>Erfahrene Web-Entwickler horchen jetzt womöglich auf: ein Jar? Ja, ein Jar. Anders als klassische Java-Webanwendungen werden Spring Boot Web-Projekte meist nicht als War sondern als ausführbares Jar deployt. In der Standardkonfiguration wird die Anwendung dann von einem eingebetteten Tomcat-Server ausgeliefert. Dass es sich um ein Webprojekt handelt hat Spring Boot messerscharf aus der Einbindung des Web-Starter gefolgert. Diese bemerkenswerte Fähigkeit von Spring Boot, aus der Einbindung von bestimmten Bibliotheken auf den Anwendungszweck zu schließen, nennt sich <em>Autoconfiguration</em> und wird uns noch öfter begegnen.</p>
+
+<p>Ansonsten besteht das Projekt nur noch aus ein paar leeren Ordnern, einem ebenfalls leeren Konfigurationsfile (application-properties), einer Testklasse und den beiden Maven-StartupScripten <em>mwnw</em> und <em>mvnw.cmd</em>.</p>
+
+<p>Die Anwendung tut zwar noch nichts (die Geschäftslogik fehlt ja noch), aber sie lässt sich schon starten. Dazu gibt es mehrere Möglichkeiten wie das Kontextmenü von CRMApplication.java öffnen, <code class="highlighter-rouge">Run As &gt; Spring Boot App</code> oder das im vorherigen Abschnitt vorgestellte Boot Dashboard.</p>
+
+<p>Hat das geklappt, taucht der Spring-Schriftzug in ASCII-Art in der Konsole auf. Den Logmeldungen in der Konsole kann man entnehmen, dass Tomcat auf Port 8080 lauscht. Ein Aufruf von http://localhost:8080 führt momentan noch zu einer Fehlermeldung, aber immerhin wird diese schon als HTML gerendert. Im nächsten Kapitel beginnen wir mit der Implementierung einer Webanwendung.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.2.RELEASE)
+</code></pre></div></div>
+
+:ET

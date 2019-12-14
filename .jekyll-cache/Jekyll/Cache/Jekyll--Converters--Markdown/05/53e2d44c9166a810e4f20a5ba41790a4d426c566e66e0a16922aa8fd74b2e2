@@ -1,0 +1,34 @@
+I"4<h1 id="hello-spring">Hello Spring</h1>
+
+<p>Das Spring-Universum ist riesig und es gibt verschiedene Arten von Spring Boot-Anwendungen: Kommandozeilenanwendungen, Batch Programme, Web Flux-Anwendungen und MVC-Anwendungen um einige zu nennen. Durch das Hinzufügen der Starter-Abhängigkeit <em>spring-boot-starter-web</em> im letzten Kapitel haben wir uns für eine MVC-Anwendung basierend auf der Servlet-API entschieden. Das ist vermutlich die populärste Form der Spring-Anwendung, weshalb sie hier auch im Vordergrund steht.</p>
+
+<h2 id="mvc">MVC</h2>
+
+<p><em>MVC</em> steht für <em>Model-View-Controller</em> und ist ein bekanntes Muster zur Unterteilung der Software in die namensgebenden Komponenten, also Daten, Darstellung und Logik. Der Web Request wird dabei an einen Frontcontroller (in Spring das <em>Dispatcher Servlet</em>) geleitet und von dort mithilfe einer Mapping-Tabelle an spezialisierte Request Controller geroutet. Der Controller lädt oder erzeugt ein passendes Model (beispielsweise die anzuzeigenden Daten). Dieses Model reicht er entweder zur Darstellung eine HTML View weiter (das ist dann eine klassische Webanwendung) oder er schreibt die Daten - zum Beispiel in Form von JSON - direkt in die Response wo sie dann von Clientanwendungen wie zum Beispiel einer App ausgewertet werden. Wenn im letzteren Fall bestimmte Konventionen eingehalten werden, spricht man von einer REST-Anwendung.</p>
+
+<p>Das Dispatcher Servlet ist bereits aktiv, sonst hätte man die Fehlermeldung im letzten Kapitel nicht gesehen. Was zur Anzeige einer Seite fehlt, ist zunächst ein spezialisierter Controller, der sich für eingehende Requests unter einer bestimmten URL zuständig fühlt.</p>
+
+<h2 id="controller">Controller</h2>
+
+<p>Zu diesem Zweck wird eine neue Java-Klasse <code class="highlighter-rouge">CRMController</code> angelegt (<code class="highlighter-rouge">File &gt; New &gt; Class</code>). Die Klasse erhält die Annotation <code class="highlighter-rouge">@RestController</code>, was sie für Spring als Rest Controller, also einen Controller, der die Daten ohne View weitergibt, kennzeichnet.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">org.springframework.web.bind.annotation.RestController</span><span class="o">;</span>
+
+<span class="nd">@RestController</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CRMController</span> <span class="o">{</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Das alleine genügt noch nicht, es fehlt noch der Eintrag für die Routing-Tabelle. Dieser wird in Form der folgenden Methode zugefügt:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"/"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="nc">String</span> <span class="nf">home</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+	<span class="k">return</span> <span class="s">"Hello World"</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Die Annotation <code class="highlighter-rouge">@GetMapping("/")</code>legt fest, dass GET-Requests auf Root von der darauf folgenden Methode (hier also home()) behandelt werden. Der Name der Methode darf frei vergeben werden.</p>
+
+<p>Ein Aufruf von http://localhost:8080 nach dem Restart der Anwendung führt nun zur Ausgabe von <em>Hello World</em>.</p>
+:ET

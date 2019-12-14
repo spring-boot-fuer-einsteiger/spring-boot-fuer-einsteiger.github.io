@@ -1,0 +1,35 @@
+I"�<h1 id="spring-tool-suite">Spring Tool Suite</h1>
+
+<p>In diesem Buch wird die <em>Spring Tool Suite</em>, kurz <em>STS</em> als Entwicklungsumgebung genutzt. Man kann STS kostenlos auf den Webseiten von Pivotal<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> für die gängigen Betriebssysteme herunterladen. Die beliebteste Variante von STS, <em>Spring Tools for Eclipse</em>, basiert auf <em>Eclipse</em> und dürfte damit den meisten Java-Entwicklern bekannt vorkommen. Sie wird hier verwendet. Daneben gibt es STS noch als Erweiterung für Visual Studio und Atom. Die Spring Tool Suite unterstützt den Entwickler mit hilfreichen Views und Assistenten. Die wichtigsten Helfer werden im Folgenden vorgestellt.</p>
+
+<h2 id="boot-dashboard">Boot Dashboard</h2>
+
+<p>Das Boot Dashboard, erreichbar über <code class="highlighter-rouge">Window &gt; Show View &gt; Other</code>, ist eine View mit der sich Spring Boot Prozesse einfach starten oder beenden lassen. Der Zustand (gestartet oder nicht) wird über einen grünen Pfeil visualisiert. Grade wenn man sehr viele Projekte im Workspace hat (was bei Microservice-Projekten ja durchaus mal vorkommt) ist die View eine großartige Hilfe, um den Überblick zu behalten. Hinter dem Namen des Projekts findet sich noch die Angabe, ob das Projekt die <em>devtools</em> aktiviert hat (dazu später mehr), sowie der Port, unter dem das Projekt erreichbar ist.</p>
+
+<p>Mit Hilfe der Buttonleiste am oberen Rand lassen sich ausgewählte Projekte starten, debuggen oder beenden. Ein Klick auf das Weltkugel-Icon öffnet einen Browser mit der Default-URL des Services.</p>
+
+<p>Die View hat noch mehr Funktionen, die aber hier erst mal nicht interessieren.</p>
+
+<p><img src="./images/spring-boot-dashboard.jpg" alt="Boot Dashboard" /></p>
+
+<h2 id="spring-initializr">Spring Initializr</h2>
+
+<p>Der schnellste Weg, um zu einem Spring Boot-Projekt zu gelangen, ist es generieren zu lassen. Spring bietet im Netz <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> dafür ein Werkzeug namens <em>Spring Initializr</em> (oder auch <em>Spring Starter</em>) an. Der Initializr hat eine REST-API, sodass er in andere Anwendungen integriert werden kann. In STS findet man das Werkzeug unter <code class="highlighter-rouge">File &gt; New &gt; Spring Starter</code> Project. Wer mit Spring Boot beginnt, sollte auf jeden Fall diesen Assistenten benutzen, um Spring-Projekte anzulegen.</p>
+
+<h2 id="diverse-helferlein">Diverse Helferlein</h2>
+
+<p>STS hat noch mehr Werkzeuge zur Unterstützung der Spring-Programmierung. Die sind allerdings nicht so auffällig wie das Dashboard oder der Spring Starter-Assistent. Kleine Helferlein wie Syntax-Highlighting, Code-Completion oder Unterstützung bei der Navigation im Code sind perfekt in die IDE integriert. Sie bemerkt man erst, wenn sie fehlen.</p>
+
+<p>Im nächsten Abschnitt legen wir ein Projekt mit dem Initializr an.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>https://spring.io/tools <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>https://start.spring.io <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
