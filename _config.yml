@@ -1,6 +1,9 @@
+title: Spring Boot für Einsteiger
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Das freie Spring Boot Buch.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://www.spring-boot-fuer-einsteiger.de" # the base hostname & protocol for your site, e.g. http://example.com
-
 
 defaults:
   -
@@ -11,3 +14,5 @@ defaults:
       
 exclude:
   - "*.header"
+
+google_analytics: UA-1269449-21
