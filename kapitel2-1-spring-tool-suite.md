@@ -2,7 +2,7 @@
 title: Spring Tool Suite
 description: Spring-Entwicklung mit Eclipse
 permalink: spring-tool-suite
-vgwort:
+vgwort: <img src="http://vg08.met.vgwort.de/na/ed8381a3913b4e2fbef32062a40e7111" width="1" height="1" alt=">
 lang: de
 ---
 # Spring Tool Suite
