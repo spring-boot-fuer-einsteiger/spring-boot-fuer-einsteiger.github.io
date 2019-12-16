@@ -2,7 +2,7 @@
 title: Spring Developer Tools
 description: Praktische Werkzeuge für den Entwickler
 permalink: spring-developer-tools
-vgwort:
+vgwort: <img src="http://vg08.met.vgwort.de/na/fca0ad2b9de8470bb2d08f78a3856000" width="1" height="1" alt=">
 lang: de
 ---
 
