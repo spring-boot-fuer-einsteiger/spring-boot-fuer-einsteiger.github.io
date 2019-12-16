@@ -8,7 +8,7 @@ lang: de
 
 # Spring Developer Tools
 
-Bisher war für jede Codeänderung ein Neustart der Anwendung erforderlich. Spring Boot bzw. der Embedded Tomcat startet zwar glücklicherweise sehr flott, dennoch geht es noch schneller. Pivotal bietet einen Satz von Hilfswerkzeugen an, mit denen sich die Spring Boot-Entwicklung noch weiter tunen lässt, die *Developer Tools*. Sie werden dem aktuellen Projekt als Dependency *devtools* zugefügt, entweder über das Kontextmenü vom pom.xml (Spring > Edit Starters) oder direkt durch das Zufügen von folgender Dependency im pom:
+Bisher war für jede Codeänderung ein Neustart der Anwendung erforderlich. Spring Boot bzw. der Embedded Tomcat startet zwar glücklicherweise sehr flott, dennoch geht es noch schneller. Pivotal bietet einen Satz von Hilfswerkzeugen an, mit denen sich die Spring Boot-Entwicklung noch weiter tunen lässt, die **Spring Developer Tools**. Sie werden dem aktuellen Projekt als Dependency *devtools* zugefügt, entweder über das Kontextmenü vom pom.xml (Spring > Edit Starters) oder direkt durch das Zufügen von folgender Dependency im pom:
 
 ```java
 <dependency>
