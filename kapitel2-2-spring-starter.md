@@ -2,7 +2,7 @@
 title: Spring Starter
 description: Generieren von Sprint Boot-Projekten
 permalink: spring-starter
-vgwort:
+vgwort: <img src="http://vg08.met.vgwort.de/na/64e7f9fa71b54e60a736e44205f84d88" width="1" height="1" alt=">
 lang: de
 ---
 
