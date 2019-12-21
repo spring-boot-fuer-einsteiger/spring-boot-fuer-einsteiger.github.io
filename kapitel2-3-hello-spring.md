@@ -1,12 +1,12 @@
 ---
-title: Hello Spring
-description: Hello World mit Spring Boot 
+title: Spring Boot Hello World
+description: Spring Boot Hello World
 permalink: hello-spring
-vgwort:
+vgwort: <img src="http://vg08.met.vgwort.de/na/4f06ad5ac496480e836f6aa4d2426618" width="1" height="1" alt=">
 lang: de
 ---
 
-# Hello Spring
+# Spring Boot Hello World
 
 Das Spring-Universum ist riesig und es gibt verschiedene Arten von Spring Boot-Anwendungen: Kommandozeilenanwendungen, Batch Programme, Web Flux-Anwendungen und MVC-Anwendungen um einige zu nennen. Durch das Hinzufügen der Starter-Abhängigkeit *spring-boot-starter-web* im letzten Kapitel haben wir uns für eine MVC-Anwendung basierend auf der Servlet-API entschieden. Das ist vermutlich die populärste Form der Spring-Anwendung, weshalb sie hier auch im Vordergrund steht.
 
