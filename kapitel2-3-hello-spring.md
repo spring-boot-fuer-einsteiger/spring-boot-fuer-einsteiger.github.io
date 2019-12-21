@@ -1,7 +1,7 @@
 ---
 title: Spring Boot Hello World
 description: Spring Boot Hello World
-permalink: hello-spring
+permalink: spring-boot-hello-world
 vgwort: <img src="http://vg08.met.vgwort.de/na/4f06ad5ac496480e836f6aa4d2426618" width="1" height="1" alt=">
 lang: de
 ---
