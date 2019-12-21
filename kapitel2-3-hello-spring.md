@@ -40,4 +40,4 @@ public String home() throws IOException {
 
 Die Annotation `@GetMapping("/")`legt fest, dass GET-Requests auf Root von der darauf folgenden Methode (hier also home()) behandelt werden. Der Name der Methode darf frei vergeben werden. 
 
-Ein Aufruf von http://localhost:8080 nach dem Restart der Anwendung führt nun zur Ausgabe von *Hello World*.
+Ein Aufruf von http://localhost:8080 nach dem Restart der Anwendung führt nun zur Ausgabe des **Spring Boot Hello World**.
