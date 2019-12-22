@@ -2,7 +2,7 @@
 title: Spring Security
 description: Einführung in Spring Security
 permalink: spring-security
-vgwort: 
+vgwort: <img src="http://vg08.met.vgwort.de/na/c486f10bc7eb402aa296ecd220d81cef" width="1" height="1" alt=">
 lang: de
 ---
 
