@@ -35,11 +35,18 @@
   link: spring-view-thymeleaf
   previous-link: spring-developer-tools
   previous-name: Spring Developer Tools
+  next-link: webjar
+  next-name: WebJars
+  
+- name: WebJars
+  link: webjar
+  previous-link: spring-view-thymeleaf
+  previous-name: Spring Views mit Thymeleaf
   next-link: spring-security
   next-name: Spring Security
   
 - name: Spring Security
   link: spring-security
-  previous-link: spring-view-thymeleaf
-  previous-name: Spring Views mit Thymeleaf
+  previous-link: webjar
+  previous-name: WebJars
   
