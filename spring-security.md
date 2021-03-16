@@ -115,3 +115,4 @@ http
   .httpBasic();
 }
 ```
+Das Thema Security in Spring ist recht umfangreich. So umfangreich dass ganze Bücher alleine dazu existieren. Wer tiefer einsteigen muss oder möchte sollte sich [Spring Security in Action](https://amzn.to/3eN8icC) von Laurentiu Spilca anschauen, das sich explizit diesem Thema widmet.
